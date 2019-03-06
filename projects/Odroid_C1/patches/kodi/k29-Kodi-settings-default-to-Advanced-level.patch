@@ -16,7 +16,7 @@ index a608a82..8122c43 100644
    if (pElement != NULL)
    {
 +    /*
-+    // Force setting level to expert
++    // Force setting level to advanced
      int settingLevel;
      if (XMLUtils::GetInt(pElement, XML_SETTINGLEVEL, settingLevel, (const int)SettingLevelBasic, (const int)SettingLevelExpert))
        m_settingLevel = (SettingLevel)settingLevel;
@@ -24,7 +24,7 @@ index a608a82..8122c43 100644
 -      m_settingLevel = SettingLevelStandard;
 -
 +    */
-+      m_settingLevel = SettingLevelExpert;
++      m_settingLevel = SettingLevelAdvanced;
      const TiXmlNode* pEventLogNode = pElement->FirstChild(XML_EVENTLOG);
      if (pEventLogNode != NULL)
      {
