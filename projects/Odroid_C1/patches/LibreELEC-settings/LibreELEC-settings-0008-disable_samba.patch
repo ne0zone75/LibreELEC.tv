@@ -1,0 +1,16 @@
+diff --git a/src/resources/lib/modules/services.py b/src/resources/lib/modules/services.py
+index e1656de..dedf2c5 100644
+--- a/src/resources/lib/modules/services.py
++++ b/src/resources/lib/modules/services.py
+@@ -581,8 +581,8 @@ class services:
+             self.oe.dbg_log('services::do_wizard', 'enter_function', 0)
+             self.oe.winOeMain.set_wizard_title(self.oe._(32311))
+ 
+-            # Enable samba
+-            self.struct['samba']['settings']['samba_autostart']['value'] = '1'
++            # Disable samba
++            self.struct['samba']['settings']['samba_autostart']['value'] = '0'
+             self.initialize_samba()
+ 
+             if hasattr(self, 'samba'):
+
